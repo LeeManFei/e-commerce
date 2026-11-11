@@ -1,0 +1,337 @@
+* {
+  box-sizing: border-box;
+}
+
+.checkout {
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-section {
+  display: none;
+}
+
+.form-section.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.checkout .box1 {
+  flex: 1 1 200px;
+  margin-bottom: auto;
+}
+
+.checkout .box1 p {
+  margin: 10px 0 6px;
+  font-size: 12px;
+  color: #555;
+}
+
+.input:focus {
+  border-color: black;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.btn:hover {
+  background-color: red;
+}
+
+.flex-btn {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.flex-btn .btn {
+  flex: 1;
+}
+
+.empty {
+  font-size: 1.6rem;
+  color: red;
+  text-align: center;
+  background: white;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);;
+  text-transform: capitalize;
+}
+
+.checkout .heading {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  color: black;
+  font-weight: bold;
+}
+
+.checkout .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.checkout form,
+.checkout .summary {
+  background-color: #ffffff;
+  padding: 25px 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  flex: 1 1 420px;
+  max-width: 460px;
+}
+
+.checkout form h3,
+.checkout .summary .title {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color:black;
+  text-transform: capitalize;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.checkout form .flex {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.checkout form .box {
+  flex: 1 1 200px;
+}
+
+.checkout form .box p {
+  margin: 10px 0 6px;
+  font-size: 12px;
+  color: #555;
+}
+
+.checkout form .box p span {
+  color: #e74c3c;
+}
+
+.checkout form .box1 .input {
+  font-size: 11px;
+}
+
+.checkout form .input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  background: #f8f9fa;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.checkout form .input:focus {
+  border-color: black;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.checkout .btn {
+  display: block;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.checkout .btn:hover {
+  background-color: red;
+}
+
+.checkout .summary .flex {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.checkout .summary .image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 1px solid #eee;
+}
+
+.checkout .summary .name {
+  font-size: 16px;
+  margin: 0;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.checkout .summary .price {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin: 4px 0 0;
+}
+
+.checkout .summary .grand-total {
+  margin-top: 20px;
+  padding-top: 12px;
+  border-top: 2px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.checkout .summary .empty {
+  color: #aaa;
+  font-size: 14px;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.checkout-steps .step {
+  position: relative;
+  flex: 1;
+  max-width: 200px;
+  cursor: pointer;
+}
+
+.checkout-steps .step:after {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  transition: all 0.3s;
+}
+
+.checkout-steps .step.active:after {
+  border-top-color: black;
+}
+
+.checkout-steps {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  max-width: 750px;
+  margin: 2rem auto 30px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.checkout-steps::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 17%;
+  width: 29%;
+  height: 2px;
+  background-color: #999; 
+  z-index: 0;
+}
+
+.checkout-steps::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: 17%;
+  width: 29%;
+  height: 2px;
+  background-color: #999; 
+  z-index: 0;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px; 
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #1f1f21;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  z-index: 1; 
+}
+.shippingReview{
+  margin: 6px 0 6px;
+  font-size: 12px;
+  color: #555;
+}
+
+.step.active .circle {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+.step span {
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.step.active span {
+  color: black;
+}
+
+.review-summary {
+  padding: 0px 20px 0px 20px;
+  margin-bottom: 20px;
+}
+
+.review-item {
+  margin-bottom: 15px;
+}
+
+.review-item h4 {
+  margin-bottom: 10px;
+  color: #34495e;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.input-error {
+  border-color: red;
+  background-color: #ffe6e6 !important;
+}

@@ -1,0 +1,248 @@
+section {
+   padding: 2.5rem 2rem;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.product-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 20px;
+}
+
+th {
+   background-color: #1f1f21;
+   color: whitesmoke;
+   padding: 10px;
+   text-align: center;
+   font-size: 15px;
+}
+
+td {
+   background: whitesmoke;
+   border-bottom: 2px solid #ddd;
+   padding: 10px;
+   text-align: center;
+   font-size: 13px;
+   color: #1f1f21;
+}
+
+.image-container {
+   height: 85px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 5px;
+}
+
+img {
+   width: 90px;
+   height: auto;
+}
+
+.btn {
+   padding: 5px 10px;
+   border: none;
+   cursor: pointer;
+}
+
+.edit {
+   background-color: #27ae60;
+   color: white;
+   text-decoration: none;
+   font-size: 15px;
+   transition: background-color 0.5s;
+}
+
+.edit:hover {
+   background-color:rgb(20, 203, 96);
+}
+
+.update-btn {
+   transition: transform 0.5s, box-shadow 0.5s;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.update-btn:hover {
+   transform: translateY(-2px);
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.delete {
+   background-color: #E74C3C;
+   color: white;
+   font-size: 15px;
+   transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.delete:hover {
+   background-color:rgb(228, 47, 27);
+   transform: translateY(-2px);
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.addAdmin-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.admin-form {
+   background-color: rgba(255, 255, 255, 0.95);
+   padding: 15px 25px 30px 25px;
+   border-radius: 10px;
+   width: 400px;
+   text-align: center;
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+   margin: auto;
+   display: block;
+   position: relative;
+}
+
+h2 {
+   margin-bottom: 25px;
+   font-size: 24px;
+   font-weight: bold;
+}
+
+.input-group {
+   display: flex;
+   align-items: center;
+   margin-bottom: 15px;
+   border: 1px solid #ccc;
+   padding: 12px;
+   border-radius: 6px;
+   background-color: #f9f9f9;
+}
+
+.input-group .icon {
+   margin-right: 12px;
+   font-size: 16px;
+   color: #333;
+}
+
+.input-group input {
+   border: none;
+   outline: none;
+   flex: 1;
+   padding: 8px;
+   background: transparent;
+   font-size: 14px;
+}
+
+.add-btn {
+   width: 100%;
+   background-color: #1f1f21;
+   color: white;
+   padding: 12px;
+   border: none;
+   border-radius: 6px;
+   cursor: pointer;
+   font-weight: bold;
+   transition: 0.5s;
+   margin-top: 10px;
+   transition : 0.3s;
+}
+
+.add-btn:hover {
+   background-color: #27ae60;
+}
+
+.popup-btn-wrapper {
+   text-align: center;
+   margin-top: 60px;
+}
+
+.popup-trigger {
+   padding: 10px;
+   background-color: #3498db;
+   font-weight: bold;
+   color: white;
+   border: none;
+   font-size: 12px;
+   cursor: pointer;
+   transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.popup-trigger:hover {
+   background-color: #0099ff;
+   transform: translateY(-2px);
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Popup overlay */
+.popup-overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.6);
+   display: none;
+   justify-content: center;
+   align-items: center;
+   z-index: 9999;
+}
+
+.popup-overlay .admin-form {
+   animation: fadeDown 0.5s;
+}
+
+@keyframes fadeDown {
+   from {
+      opacity: 0;
+      transform: translateY(-100px);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+@keyframes fadeOutScale {
+   from {
+      opacity: 1;
+      transform: translateY(0);
+   }
+
+   to {
+      opacity: 0;
+      transform: translateY(-100px);
+   }
+}
+
+.admin-form .close-container {
+   display: flex;
+}
+
+.admin-form .close-container a {
+   font-size: 22px;
+   color: #333;
+   margin-left: auto;
+   max-width: max-content;
+   text-decoration: none;
+}
+
+.admin-form .close-btn {
+   font-size: 22px;
+   color: #333;
+   cursor: pointer;
+   font-weight: bold;
+   margin-left: auto;
+   max-width: max-content;
+}
+
+.image {
+   font-weight : bold;
+   color: #333;
+   font-size : 14px;
+}

@@ -1,0 +1,103 @@
+section {
+   padding: 2.5rem 2rem;
+}
+
+/* Align label and input side by side */
+.admin_form .form-group {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 30px 0 30px 0;
+   border-bottom: 1px solid #D3D3D3;
+}
+
+/* Label styling */
+.admin_form .form-group label {
+   flex: 0 0 190px;
+   font-size: 12px;
+   text-transform: uppercase;
+   color: #555;
+   letter-spacing: 0.5px;
+}
+
+/* Input container */
+.admin_form .input-group {
+   flex: 1;
+}
+
+/* Input fields */
+.admin_form input[type="text"],
+.admin_form input[type="email"],
+.admin_form input[type="password"],
+.admin_form input[type="file"] {
+   width: 100%;
+   padding: 8px 10px;
+   border: none;
+   font-size: 14px;
+   outline: none;
+   transition: border-color 0.3s;
+}
+
+.admin_form input:focus {
+   border-color: #3498db;
+}
+
+/* Optional: Adjust image section for alignment */
+.image {
+   margin-top: 20px;
+   font-weight: 600;
+   color: #333;
+}
+
+.profile-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.image-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 5px;
+   margin: auto;
+}
+
+img {
+   width: 90px;
+   height: auto;
+}
+
+.input-group {
+   display: flex;
+   align-items: center;
+   border: 1px solid #aca8a8;
+   padding: 5px;
+}
+
+.input-group input {
+   border: none;
+   outline: none;
+   flex: 1;
+   padding: 8px;
+   background: transparent;
+   font-size: 14px;
+}
+
+.save-trigger {
+   padding: 10px;
+   background-color: #3498db;
+   font-weight: bold;
+   color: white;
+   border: none;
+   font-size: 12px;
+   cursor: pointer;
+   transition: transform 0.5s, box-shadow 0.5s, background-color 0.5s;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.save-trigger:hover {
+   background-color: #0099ff;
+   transform: translateY(-2px);
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}

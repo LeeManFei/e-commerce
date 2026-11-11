@@ -1,0 +1,183 @@
+.order-details {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  min-height: 70vh;
+}
+
+.order-details .heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.order-details .subtext {
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.message-box {
+  padding: 12px;
+  margin-bottom: 25px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.message-box.info {
+  background-color: #333; 
+  color: #fff;            
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* =========================================================
+   Order Card Container
+   ========================================================= */
+.order-card {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Left side: Order Summary */
+.order-summary {
+  flex: 1;
+  border-right: 1px solid #eee;
+  padding-right: 20px;
+}
+
+.order-summary p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+/* --- Status Badge Styles --- */
+.order-summary .status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: capitalize; 
+}
+
+/* Pending and Processing use the same orange color */
+.status.pending,
+.status.processing {
+  background: #fff4d1;
+  color: #b38b00;
+}
+
+/* Green: Delivered / Completed / Paid */
+.status.delivered,
+.status.completed,
+.status.paid {
+  background: #e0ffe1;
+  color: #178a27;
+}
+
+/* Red: Cancelled */
+.status.cancelled {
+  background: #ffe5e5;
+  color: #c83a3a;
+}
+
+/* Right side: Product List */
+.order-products {
+  flex: 3;
+}
+
+.product-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.product-row img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+.product-info {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.product-info h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+.product-info p {
+  color: #555;
+  font-size: 14px;
+}
+
+.product-info .links a {
+  color: #555;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.product-info .links a:hover {
+  color: #000;
+}
+
+.product-price {
+  font-weight: 600;
+  font-size: 16px;
+  color: #111;
+}
+
+/* Button Area */
+.order-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer; 
+}
+
+.btn:hover {
+  background: #333;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 1px solid #111;
+  color: #111;
+}
+
+.btn.outline:hover {
+  background: #111;
+  color: #fff;
+}

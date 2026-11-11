@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #eef3ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 30px 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    width: 380px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+p {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+input[type=email],
+input[type=password] {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #4a6cf7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #3653d7;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.success {
+    color: green;
+    margin-bottom: 10px;
+}
+
+.message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #4a6cf7;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}

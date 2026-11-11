@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+Thumbs.db
+desktop.ini
+
+# Local exports and unrelated graduation presentation files
+*.pptx
+*.pdf
+
